@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Bilal Sports</title>
+<meta name="description" content="Browse cricket bats, footballs, tennis balls and sportswear at Bilal Sports, Havelian.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo-link" aria-label="Bilal Sports Home">
+      <svg class="logo-svg" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+        <path class="logo-swoosh" d="M2 40 Q 40 10, 90 25" stroke-dasharray="120" stroke-dashoffset="120"/>
+        <text x="0" y="34" class="logo-text-main">B<tspan class="logo-text-accent">ilal</tspan></text>
+        <circle class="logo-dot" cx="34" cy="10" r="4"/>
+        <text x="70" y="34" class="logo-text-accent" font-weight="800" font-family="Poppins,Arial,sans-serif" font-size="26">Sports</text>
+      </svg>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+923169163861" class="nav-cta">Call Us</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+    <h1>Our Products</h1>
+    <p>Cricket bats, footballs, tennis balls, and sportswear — quality gear for every athlete in Havelian.</p>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section>
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterProducts('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProducts('cricket', this)">Cricket Bats</button>
+      <button class="filter-btn" onclick="filterProducts('football', this)">Footballs</button>
+      <button class="filter-btn" onclick="filterProducts('tennis', this)">Tennis Balls</button>
+      <button class="filter-btn" onclick="filterProducts('sportswear', this)">Sportswear</button>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Cricket Bats -->
+      <div class="product-card" data-category="cricket">
+        <span class="product-badge">Bestseller</span>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1595435934819-5704d86e3aa8?auto=format&fit=crop&w=500&q=80" alt="English willow cricket bat"></div>
+        <div class="product-info">
+          <span class="cat">Cricket</span>
+          <h4>Pro English Willow Bat</h4>
+          <p>Tournament-grade balance and power for serious batsmen.</p>
+          <div class="product-price"><strong>Rs. 4,500</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="cricket">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=500&q=80" alt="Kashmir willow cricket bat"></div>
+        <div class="product-info">
+          <span class="cat">Cricket</span>
+          <h4>Kashmir Willow Bat</h4>
+          <p>Durable and affordable, ideal for practice sessions.</p>
+          <div class="product-price"><strong>Rs. 2,200</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="cricket">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&w=500&q=80" alt="Tape ball cricket bat"></div>
+        <div class="product-info">
+          <span class="cat">Cricket</span>
+          <h4>Tape-Ball Special Bat</h4>
+          <p>Lightweight design built for street and tape-ball cricket.</p>
+          <div class="product-price"><strong>Rs. 1,800</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footballs -->
+      <div class="product-card" data-category="football">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1614632537190-23e4146777db?auto=format&fit=crop&w=500&q=80" alt="Match football"></div>
+        <div class="product-info">
+          <span class="cat">Football</span>
+          <h4>Match-Ready Football</h4>
+          <p>Durable stitched panels for daily play and matches.</p>
+          <div class="product-price"><strong>Rs. 1,800</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="football">
+        <span class="product-badge">New</span>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=500&q=80" alt="Training football"></div>
+        <div class="product-info">
+          <span class="cat">Football</span>
+          <h4>Training Football</h4>
+          <p>Soft touch panel for practice drills and youth training.</p>
+          <div class="product-price"><strong>Rs. 1,200</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="football">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?auto=format&fit=crop&w=500&q=80" alt="Futsal ball"></div>
+        <div class="product-info">
+          <span class="cat">Football</span>
+          <h4>Futsal / Indoor Ball</h4>
+          <p>Low-bounce design for indoor and futsal courts.</p>
+          <div class="product-price"><strong>Rs. 1,500</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tennis Balls -->
+      <div class="product-card" data-category="tennis">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=500&q=80" alt="Tennis balls pack"></div>
+        <div class="product-info">
+          <span class="cat">Tennis</span>
+          <h4>Tennis Ball Pack (3pc)</h4>
+          <p>Consistent bounce for practice and matches.</p>
+          <div class="product-price"><strong>Rs. 600</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="tennis">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1595435742656-5272d0b3fa82?auto=format&fit=crop&w=500&q=80" alt="Tennis ball tube"></div>
+        <div class="product-info">
+          <span class="cat">Tennis</span>
+          <h4>Tape Tennis Ball (Single)</h4>
+          <p>Popular choice for tape-ball cricket in Havelian.</p>
+          <div class="product-price"><strong>Rs. 150</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sportswear -->
+      <div class="product-card" data-category="sportswear">
+        <span class="product-badge">New</span>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Sports t-shirt"></div>
+        <div class="product-info">
+          <span class="cat">Sportswear</span>
+          <h4>Breathable Sports Tee</h4>
+          <p>Lightweight moisture-wicking fabric for training.</p>
+          <div class="product-price"><strong>Rs. 1,200</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sportswear">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=500&q=80" alt="Track pants / trousers"></div>
+        <div class="product-info">
+          <span class="cat">Sportswear</span>
+          <h4>Athletic Track Trousers</h4>
+          <p>Stretch-fit trousers for comfort during play.</p>
+          <div class="product-price"><strong>Rs. 1,800</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sportswear">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?auto=format&fit=crop&w=500&q=80" alt="Polo shirt"></div>
+        <div class="product-info">
+          <span class="cat">Sportswear</span>
+          <h4>Classic Sports Polo</h4>
+          <p>Smart-casual polo, great for club and team wear.</p>
+          <div class="product-price"><strong>Rs. 1,600</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sportswear">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=500&q=80" alt="Sports shirt"></div>
+        <div class="product-info">
+          <span class="cat">Sportswear</span>
+          <h4>Team Sports Shirt</h4>
+          <p>Custom-ready jersey shirt for local teams.</p>
+          <div class="product-price"><strong>Rs. 1,400</strong>
+            <span class="icon-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l3 6-3 6M18 2l-3 6 3 6"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Can't Find What You Need?</h2>
+    <p>Call us or visit the shop — we're happy to help you find the right gear.</p>
+    <a href="contact.html" class="btn" style="background:#111418;color:#fff;">Contact Us</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg width="150" height="38" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="34" font-size="26" font-weight="800" fill="#fff" font-family="Poppins,Arial,sans-serif">Bilal</text>
+            <circle cx="34" cy="10" r="4" fill="#ff6b1a"/>
+            <text x="70" y="34" font-size="26" font-weight="800" fill="#0e7c3a" font-family="Poppins,Arial,sans-serif">Sports</text>
+          </svg>
+        </div>
+        <p>Your trusted local shop for cricket bats, footballs, tennis balls, and quality sportswear in POF Havelian Cantt.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html">Cricket Bats</a></li>
+          <li><a href="products.html">Footballs</a></li>
+          <li><a href="products.html">Sportswear</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923169163861">+92 316 9163861</a></li>
+          <li>Near Bahi Jan Sweets and Bakers, Dewar Stop, POF Havelian Cantt</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bilal Sports. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
